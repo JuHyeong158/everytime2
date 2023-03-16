@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+#logo > a {
+  float: left; display: block; margin: 20px 20px 20px 0; width: 50px; height: 50px;
+}
+#logo > a > img{
+  width: 100%; height: 100%;
+}
+#logo > p {
+  float: left; margin:0px;
+}
+#logo > p > span.name {
+  display: block; color: #c62917; font-weight: bold;
+}
+#logo > p > span.name.single {
+  line-height: 76px;
+}
+#logo > p > span.name.multiple {
+  margin-top: 20px; margin-left: 3px; line-height: 15px; font-size: 12px;
+}
+#logo > p > span.subname {
+  display: block; line-height: 25px;  font-size: 22px;
+}
+
+#account {
+  padding: 20px 0; box-sizing: border-box; font-size: 0;
+}
+#account a {
+  position: relative; display: inline-block; margin-left: 4px; height: 40px; line-height: 40px;
+}
+#account a {
+  box-sizing: border-box; border: 1px solid #d6d6d6; border-radius: 12px; vertical-align: top;
+}
+#account a.button {
+  padding: 0 12px; color: gray; font-size: 14px;
+}
+#account a.button.red {
+  border: 0; color: #fff; font-weight: bold; background-color: #c62917;
+}
+
+#menu > li> a{
+  color: #444444; font-size:16px; font-weight:bold;
+}
+#menu > li > a:hover,
+#menu > li.active > a {
+  color: #c62917;
+}
+
+
+#submenu {
+  border-bottom: 1px solid #d6d6d6; background-color: #f2f2f2;
+}
+#submenu > div.wrap {
+  box-sizing: border-box; text-align: center; white-space: nowrap; overflow: hidden; overflow-x: auto;
+}
+#submenu > div.wrap > div.divider {
+  display: inline-block; width: 1px; height: 220px; background-color: #e3e3e3;
+}
+#submenu > div.wrap > div.group,
+#submenu > div.wrap > div.group2{
+  display: inline-block; vertical-align: top; box-sizing: border-box; text-align: left;
+}
+#submenu > div.wrap > div.group.hidden,
+#submenu > div.wrap > div.group2.hidden {
+  display: none;
+}
+#submenu > div.wrap > div.group > ul > li > a,
+#submenu > div.wrap > div.group2 > ul > li > a{
+  display: block; line-height: 25px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+#submenu > div.wrap > div.group2 > ul > li > a.search {
+  color: #c62917; font-weight: bold;
+}
+#submenu hr {
+  clear: both; height: 0; border: 0;
+}
+
+
+@media {
+  nav {
+    position: fixed; z-index: 100; left: 0; top: 0; width: 100%; height: 80px; border-bottom: 1px solid #d6d6d6; background-color: #fff;
+  }
+  nav > div.wrap {
+    margin: 0 auto; width: 1180px; height: 100%;
+  }
+
+  #logo {
+    float: left; margin-left: 24px; height: 100%
+  }
+  #account {
+    float: right; margin-right: 24px; height: 100%
+  }
+  #menu {
+    margin: 0 auto; width: 600px; height: 100%; font-size: 0; text-align:center;
+  }
+  #menu > li {
+    display: inline-block; margin: 0 12px; height: 76px; line-height: 76px;
+  }
+  #menu > li.active {
+    border-bottom: 4px solid #c62917
+  }
+  a {
+    color: #666; text-decoration: none; ;
+  }
+  #submenu {
+    margin-top: 80px;
+  }
+  #submenu > div.wrap {
+    padding: 15px;
+  }
+  #submenu > div.wrap > div.divider {
+    margin-right: 5px;
+  }
+  #submenu > div.wrap > div.group {
+    width: 130px;
+  }
+  #submenu > div.wrap > div.group2 {
+    width: 190px;
+  }
+  #submenu > div.wrap > div.group > h3,
+  #submenu > div.wrap > div.group > ul > li > a,
+  #submenu > div.wrap > div.group2 > ul > li > a{
+    font-size: 14px;
+  }
+
+
+ul{
+  list-style:none; letter-spacing: -0.5px; padding: 0px;
+  }
+
+
+}
